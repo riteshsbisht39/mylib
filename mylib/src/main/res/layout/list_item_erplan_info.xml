@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_quarter"
+    android:layout_marginLeft="@dimen/spacing_half"
+    android:layout_marginRight="@dimen/spacing_half"
+    android:layout_marginTop="@dimen/spacing_quarter"
+    android:background="@drawable/light_erp_white_state"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_half">
+
+    <CheckBox
+        android:id="@+id/list_item_erplan_info_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/selector_erp_event_list"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/list_item_erplan_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/em_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/spacing_half"
+        android:autoLink="all"
+        android:textSize="@dimen/font_small"
+        android:textColor="@color/em_black" />
+</LinearLayout>

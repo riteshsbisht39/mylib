@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_quarter"
+    android:layout_marginLeft="@dimen/spacing_half"
+    android:layout_marginRight="@dimen/spacing_half"
+    android:layout_marginTop="@dimen/spacing_quarter"
+    android:background="@drawable/light_erp_blue_state"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_half">
+
+    <ImageView
+        android:id="@+id/list_item_erplans_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/list_item_erplans_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_erp_list_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/spacing_half"
+        android:textSize="@dimen/font_med"
+        android:textColor="@color/white" />
+</LinearLayout>

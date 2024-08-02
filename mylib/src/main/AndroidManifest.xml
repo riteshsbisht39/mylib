@@ -1,4 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application android:supportsRtl="true">
+        <activity
+            android:name=".ui.map.ViewMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.map.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.plan.PlanInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.plan.PlansActivity"
+            android:exported="false"
+            android:label="@string/activity_plans" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:exported="false"
+            android:label="@string/activity_hone" />
+
+        <service
+            android:name=".service.IncidentService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+        <service
+            android:name=".service.LocationService"
+            android:exported="false" />
+    </application>
+
 </manifest>

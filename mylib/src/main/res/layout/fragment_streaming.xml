@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/incident_ongoing_video_status"-->
+<!--            android:background="@drawable/bar_incident_left"-->
+<!--            android:src="@drawable/ic_incident_status_video_active"-->
+<!--            android:padding="@dimen/spacing_quarter"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/incident_ongoing_location_status"-->
+<!--            android:background="@drawable/bar_incident_center"-->
+<!--            android:src="@drawable/ic_incident_status_location_active"-->
+<!--            android:padding="@dimen/spacing_quarter"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/incident_ongoing_observer_status"-->
+<!--            android:background="@drawable/bar_incident_center"-->
+<!--            android:src="@drawable/ic_incident_status_observer_inactive"-->
+<!--            android:padding="@dimen/spacing_quarter"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/incident_ongoing_log"-->
+<!--            android:background="@drawable/bar_incident_right"-->
+<!--            android:textColor="@color/em_light_text"-->
+<!--            android:textSize="@dimen/font_small"-->
+<!--            android:maxLines="1"-->
+<!--            android:ellipsize="end"-->
+<!--            android:paddingTop="@dimen/spacing_quarter"-->
+<!--            android:paddingEnd="@dimen/spacing_quarter"-->
+<!--            android:paddingBottom="@dimen/spacing_quarter"-->
+<!--            android:paddingStart="@dimen/spacing_half"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:baselineAligned="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/incident_ongoing_hide"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="2"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="@dimen/spacing_quarter"-->
+<!--            android:layout_marginStart="@dimen/spacing_half"-->
+<!--            android:layout_marginBottom="@dimen/spacing_standard"-->
+<!--            android:layout_marginEnd="@dimen/spacing_quarter"-->
+<!--            android:background="@drawable/black_button_selector">-->
+
+<!--            <TextView-->
+<!--                android:text="@string/incident_ongoing_hide"-->
+<!--                android:textColor="@color/em_light_text"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="@dimen/font_extrasmall"-->
+<!--                android:drawableTop="@drawable/ic_incident_hide"-->
+<!--                android:drawablePadding="@dimen/spacing_quarter"-->
+<!--                android:padding="@dimen/spacing_quarter"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/streaming_ongoing_end"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/spacing_quarter"
+            android:layout_marginLeft="@dimen/spacing_quarter"
+            android:layout_marginBottom="@dimen/spacing_standard"
+            android:layout_marginRight="@dimen/spacing_quarter"
+            android:background="@color/red">
+
+            <TextView
+                android:id="@+id/end_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/spacing_quarter"
+                android:text="@string/incident_ongoing_end"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_extra_extra_small" />
+
+        </RelativeLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/incident_ongoing_chat"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="2"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="@dimen/spacing_quarter"-->
+<!--            android:layout_marginBottom="@dimen/spacing_standard"-->
+<!--            android:layout_marginEnd="@dimen/spacing_half"-->
+<!--            android:background="@drawable/btn_black_focus">-->
+
+<!--            <View-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"/>-->
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/incident_ongoing_chat_text"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/incident_ongoing_chat"-->
+<!--                    android:textColor="@color/em_light_text"-->
+<!--                    android:textSize="@dimen/font_extrasmall"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:drawableTop="@drawable/ic_incident_chat"-->
+<!--                    android:drawablePadding="@dimen/spacing_quarter"-->
+<!--                    android:padding="@dimen/spacing_quarter"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/text_chat_count"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:background="@drawable/shape_circle_blue"-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:textSize="@dimen/font_extra_extra_small"-->
+<!--                    android:gravity="center"-->
+<!--                    android:visibility="gone"/>-->
+
+<!--            </FrameLayout>-->
+
+<!--            <View-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"/>-->
+
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/incident_ongoing_blackout_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/em_black"/>
+
+</FrameLayout>

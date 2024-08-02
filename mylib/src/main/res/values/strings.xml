@@ -1,0 +1,23 @@
+<resources>
+    <string name="activity_hone">Home</string>
+
+    <string name="activity_plans">Plans</string>
+    <string name="erplans_error_message">No plans are currently available</string>
+    <string name="erplan_info_message">If this is a life threatening situation, please call 911.</string>
+    <string name="send_acknowledgement">Acknowledge</string>
+    <string name="plan_ack_posting">Posting acknowledgement …</string>
+    <string name="plan_ack_post_success">"Acknowledgement posted successfully."</string>
+
+    <string name="activity_maps">Map(s)</string>
+    <string name="no_map_text">No maps are currently available</string>
+
+    <string name="incident_ongoing_end">End Event</string>
+    <string name="notification_title">Safety Kuvrr is monitoring</string>
+    <string name="notification_incident_running">Safety Kuvrr is monitoring</string>
+    <string name="channel_active_incident_name">Active Event Alert</string>
+    <string name="channel_active_incident_description">An active event is in progress on this device.</string>
+
+    <string name="event_end_other">Other</string>
+
+    <string name="simple_error">Something went wrong, please try again later.</string>
+</resources>
